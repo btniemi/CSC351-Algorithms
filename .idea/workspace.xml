@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7459c5fe-4aef-4ea0-8d31-7e658dad5ecf" name="Default Changelist" comment="" />
+    <list default="true" id="7459c5fe-4aef-4ea0-8d31-7e658dad5ecf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/InClassExamples/TestingExamples/mySum.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InClassExamples/TestingExamples/test_mySum.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,7 +28,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Algorithims  2nd Edition Chapter Solutions/code/ch_02.py" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+>>>>>>> 8c2f82312ef4252e5c20f7ce1981eb8ffa18e48e
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager" selected="Python.anagram">
