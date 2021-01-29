@@ -24,6 +24,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Algorithims  2nd Edition Chapter Solutions/code/ch_02.py" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager" selected="Python.anagram">
@@ -88,6 +89,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1611783057886">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/1920.0.1920.1160/0.0.1920.1040@0.0.1920.1040" timestamp="1611783057886" />
     <state width="1899" height="348" key="GridCell.Tab.0.bottom" timestamp="1611604042761">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
