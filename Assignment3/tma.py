@@ -17,37 +17,32 @@ def match(menPrefrence, womanPrefrence):
     freeM = [False for i in range(count)]
     freeW = [False for i in range(count)]
     freeCount = len(freeM)
-    m = 0
-
     #where there is a free man who has a woman to purpose to:
-    while m < freeCount:
-        if freeM[m] == False:
-            break
-        m += 1
-    # w=m highest ranked choice that he has not yet purposed to
+    #w=m highest ranked choice that he has not yet purposed to
     i = 0
-    while i < freeCount and freeM[m] == False:
-        w = menPrefrence[m][i]
+    while i < freeCount and freeM[i] == False:
+        w = menPrefrence[i][i-1]
         #if this woman is free:
         if freeW[w] == False:
             # man and woman get engaged
-            freeW[w] = m
-            freeM[m] = True
+            freeW[w] = i + 1
+            freeM[i] = True
             freeCount -= 1
         #else woman is engaged to man prime
         else:
             mPrime = freeW[w]
             #if woman prefers man to man prime
-            if womanPrefrence[w][m] < womanPrefrence[w][mPrime]:
-                freeW[w] = m
+            if womanPrefrence[w][i] < womanPrefrence[w][mPrime]:
+                freeW[w] = i
                 # man and woman get engaged
-                freeM[m] = True
+                freeM[i] = True
                 # man prime set to free
                 freeM[mPrime] = False
             else:
-                #man prime and woman remain engaged
-                break
+                """man prime and woman remain engaged"""
         i += 1
+    print(freeM)
+    print(freeW)
 
     #print to a file the answer need help here to see if I am on the right path...
 
