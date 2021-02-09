@@ -1,3 +1,5 @@
+import pytest
+
 """ I used code from https://www.geeksforgeeks.org/fractional-knapsack-problem/ to help kickstart my ideas,
 ended up useing most of the same code and tried to make it different but could not find another way. Not
 suer if there is a simpler way to do this???"""
@@ -16,13 +18,21 @@ class ItemValue:
         return self.cost > other.cost
 
 
-def fillKnapsackByValue(wt, val, capacity):
-    if len(wt) != len(val):
+def fillKnapsackByValue(items, capacity):
+    weight = []
+    value = []
+    for i in items:
+        value.append(i[0])
+        weight.append(i[1])
+    print(weight)
+    print(value)
+
+    if len(weight) != len(value):
         raise Exception("Sorry, not every items weight has a corresponding value.")
 
     iVal = []
-    for i in range(len(wt)):
-        iVal.append(ItemValue(wt[i], val[i], i))
+    for i in range(len(weight)):
+        iVal.append(ItemValue(weight[i], value[i], i))
     iVal.sort()
 
     totalValue = 0
@@ -39,14 +49,19 @@ def fillKnapsackByValue(wt, val, capacity):
             break
     return totalValue
 
-
-wt = [10, 40, 20, 30]
-val = [60, 40, 100, 120]
-capacity = 50
-
-maxValue = fillKnapsackByValue(wt, val, capacity)
+knapsack = 50
+#how to read a file into here to turn into a list to be useable with code????
+itemsList = []
+maxValue = fillKnapsackByValue(itemsList, knapsack)
+print("The max value of your bag is: ", maxValue)
 
 
 # I cant figure out how to write a test case for this to actually work honestly I dont understand how to write test at all (its like its not working at all honestly)
-def test_fractionalKnapsack():
-    assert fillKnapsackByValue([10, 40, 20, 30], [60, 40, 100, 120], 50) == 240, "Should be True"
+def test_knapsack():
+    assert fillKnapsackByValue([(60, 10), (40, 40), (100, 20), (120, 30)], 50) == 240, "Should PASS"
+def test_knapsack():
+    assert fillKnapsackByValue([(60, 20), (40, 40), (100, 20), (120, 30)], 50) == 220, "Should PASS"
+def test_knapsack():
+    assert fillKnapsackByValue([(60, 30), (40, 40), (100, 20), (120, 30)], 50) == 220, "Should PASS"
+def test_knapsack():
+    assert fillKnapsackByValue([(60, 10), (40, 20), (100, 10), (120, 10)], 50) != 240, "Should Pass but is the failing test case"
