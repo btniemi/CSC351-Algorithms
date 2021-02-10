@@ -24,8 +24,8 @@ def fillKnapsackByValue(items, capacity):
     for i in items:
         value.append(i[0])
         weight.append(i[1])
-    print(weight)
-    print(value)
+    print(weight, "weight list")
+    print(value, "value list")
 
     if len(weight) != len(value):
         raise Exception("Sorry, not every items weight has a corresponding value.")
@@ -50,9 +50,18 @@ def fillKnapsackByValue(items, capacity):
     return totalValue
 
 knapsack = 50
-file = open("myItems.txt", "r")
-itemsList = file.read()
-print(itemsList)
+with open("myItems.txt") as f:
+    items = f.read()
+    print(items)
+
+itemsList = items.strip('][)(').split('), (')
+print(itemsList, "items list")
+print(itemsList[0], "item at index 0")
+print(itemsList[1], "item at index 1")
+
+"""how do I convert this read file to a format I can use...very tricky at this point but code works as seen
+by the tests if the right input is given"""
+
 
 maxValue = fillKnapsackByValue(itemsList, knapsack)
 print("The max value of your bag is: ", maxValue)
