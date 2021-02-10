@@ -50,7 +50,7 @@ def fillKnapsackByValue(items, capacity):
     return totalValue
 
 knapsack = 50
-#how to read a file into here to turn into a list to be useable with code????
+file = open("myItems.txt", "r")
 itemsList = []
 maxValue = fillKnapsackByValue(itemsList, knapsack)
 print("The max value of your bag is: ", maxValue)
