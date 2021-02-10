@@ -51,7 +51,9 @@ def fillKnapsackByValue(items, capacity):
 
 knapsack = 50
 file = open("myItems.txt", "r")
-itemsList = []
+itemsList = file.read()
+print(itemsList)
+
 maxValue = fillKnapsackByValue(itemsList, knapsack)
 print("The max value of your bag is: ", maxValue)
 
