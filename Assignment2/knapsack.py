@@ -54,10 +54,14 @@ with open("myItems.txt") as f:
     items = f.read()
     print(items)
 
-itemsList = items.strip('][)(').split('), (')
-print(itemsList, "items list")
-print(itemsList[0], "item at index 0")
-print(itemsList[1], "item at index 1")
+splitItemsList = items.strip('][)(').split('), (')
+print(splitItemsList, "split items list")
+iList = splitItemsList.split(', ')
+
+print(splitItemsList[0], "item at index 0")
+print(splitItemsList[1], "item at index 1")
+print(iList[0])
+print(iList[1])
 
 """how do I convert this read file to a format I can use...very tricky at this point but code works as seen
 by the tests if the right input is given"""
