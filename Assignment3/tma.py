@@ -62,12 +62,18 @@ def match(menPrefrence, womanPrefrence):
 
 
 matched = [(1, 5), (2, 4), (3, 3), (4, 2), (5, 1)]
+print(len(matched))
+print(matched[0][0])
+print(matched[0])
 
-def check(matched):
-    #for each boy first tuple
-        #check if match equals any other matched boy tuples pair
-            #if yes match == false
-            #else match == true
+def check(match):
+    i = 0
+    #for every tuple in list
+    #check if [0][0] == [0][1] and all others if firs clears never have to recheck because its good
+    #check if match equals any other matched boy tuples pair
+        #if yes match == false
+        #else match == true
     pass
 
 match(m_preference, w_preference)
+check(matched)
