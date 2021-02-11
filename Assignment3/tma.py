@@ -7,9 +7,9 @@ I modified things to match the parameters of the project."""
 what to do last is to figure out the file read and file write
 """
 
-m_preference = [[3,2,5,1,4],[1,2,5,3,4],[4,3,2,1,5],[1,3,4,2,5],[1,2,4,5,3]]
-w_preference = [[3,5,2,1,4],[5,2,1,4,3],[4,3,5,1,2],[1,2,3,4,5],[2,3,4,1,5]]
-marriages = [(1,5),(2,2),(3,4),(4,3),(5,1)] #(boys,girls) girls saying no and men seeking
+m_preference = [[3,2,5,1,4],[1,2,5,3,4],[4,3,2,1,5],[1,3,4,2,5],[1,2,4,5,3]] #should take in a read file/formatted
+w_preference = [[3,5,2,1,4],[5,2,1,4,3],[4,3,5,1,2],[1,2,3,4,5],[2,3,4,1,5]] #should take in a read file/formatted
+marriages = [(1,5),(2,2),(3,4),(4,3),(5,1)] #(boys,girls) girls saying no and men seeking used for testing purposes
 
 def match(menPrefrence, womanPrefrence):
     if len(menPrefrence) != len(womanPrefrence):
@@ -52,10 +52,8 @@ def match(menPrefrence, womanPrefrence):
                     freeM[m] = True
                     # man prime set to free
                     freeM[mPrime-1] = False
-                    # manPrime throws away his preference for that woman from his list as they will not match
-
                 else:
-                    """man prime and woman remain engaged"""
+                    """man prime and woman remain engaged nothing happens"""
             i += 1
     return print(freeM, freeW, sep="\r\n")  # mess with this return statement to get a better print of pairings
                                             #print to a file the answer need help here to see if I am on the right path...
