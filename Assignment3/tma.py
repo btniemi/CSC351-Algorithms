@@ -1,4 +1,6 @@
 import pytest
+import sys
+import ast
 
 """I used code from https://www.geeksforgeeks.org/stable-marriage-problem/ to help jumpstart my idea.
 I modified things to match the parameters of the project."""
@@ -6,10 +8,6 @@ I modified things to match the parameters of the project."""
 """think nested 4 loops, use lists of lists, termination condition = all men have a mate
 what to do last is to figure out the file read and file write
 """
-
-m_preference = [[3,2,5,1,4],[1,2,5,3,4],[4,3,2,1,5],[1,3,4,2,5],[1,2,4,5,3]] #should take in a read file/formatted
-w_preference = [[3,5,2,1,4],[5,2,1,4,3],[4,3,5,1,2],[1,2,3,4,5],[2,3,4,1,5]] #should take in a read file/formatted
-marriages = [(1,5),(2,2),(3,4),(4,3),(5,1)] #(boys,girls) girls saying no and men seeking used for testing purposes
 
 def match(menPrefrence, womanPrefrence):
     if len(menPrefrence) != len(womanPrefrence):
@@ -55,25 +53,59 @@ def match(menPrefrence, womanPrefrence):
                 else:
                     """man prime and woman remain engaged nothing happens"""
             i += 1
-    return print(freeM, freeW, sep="\r\n")  # mess with this return statement to get a better print of pairings
-                                            #print to a file the answer need help here to see if I am on the right path...
+    j = 0
+    ans = []
+    for i in range(n):
+        ans.append((j+1, int(freeW[j])))
+        j += 1
+    return ans
 
 
 
+with open(sys.argv[1], 'r') as f1:
+    m_pref = f1.readlines()
+    m_pref = ast.literal_eval(m_pref[0])
+with open(sys.argv[2], 'r') as f2:
+    w_pref = f2.readlines()
+    w_pref = ast.literal_eval(w_pref[0])
 
-matched = [(1, 5), (2, 4), (3, 3), (4, 2), (5, 1)]
-print(len(matched))
-print(matched[0][0])
-print(matched[0])
+men = m_pref
+women = w_pref
+match(men, women)
 
-def check(match):
-    i = 0
-    #for every tuple in list
-    #check if [0][0] == [0][1] and all others if firs clears never have to recheck because its good
-    #check if match equals any other matched boy tuples pair
-        #if yes match == false
-        #else match == true
+
+"""lost on how to write this to a file now as well understand the read but not the write"""
+with open('tmaMatches.txt', 'w') as matchedFile:
     pass
 
-match(m_preference, w_preference)
+
+def check(match):
+    ans = 0
+    #for every tuple in list
+    for item in match:
+    #check if [0][0] == [0][1] and all others -> if first clears never have to recheck because its good
+        if item[1] == match[0][1]:
+            # if yes match == true
+            ans = ans + 1
+        else:
+            # else no match == false
+            ans = ans
+    return print(ans)
+
+
+
+"""stuff below is for testing purposes"""
+m_preference = [[3,2,5,1,4],[1,2,5,3,4],[4,3,2,1,5],[1,3,4,2,5],[1,2,4,5,3]]
+w_preference = [[3,5,2,1,4],[5,2,1,4,3],[4,3,5,1,2],[1,2,3,4,5],[2,3,4,1,5]]
+marriages = [(1,5),(2,2),(3,4),(4,3),(5,1)] #(boys,girls) girls saying no and men seeking used for testing purposes
+
+matched = [(1, 5), (2, 4), (3, 3), (4, 2), (5, 1)]
+matched2 = [(1, 5), (2, 4), (3, 3), (4, 3), (5, 1)]
+
 check(matched)
+check(matched2)
+
+def test_match():
+    assert match(m_preference, w_preference) == marriages , "should pass"
+def test_check():
+    pass
