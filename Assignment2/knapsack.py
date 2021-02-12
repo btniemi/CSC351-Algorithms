@@ -1,4 +1,6 @@
 import pytest
+import sys
+import ast
 
 """ I used code from https://www.geeksforgeeks.org/fractional-knapsack-problem/ to help kickstart my ideas,
 ended up useing most of the same code and tried to make it different but could not find another way. Not
@@ -48,37 +50,15 @@ def fillKnapsackByValue(items, capacity):
     return totalValue
 
 
+if(len(sys.argv)>=2):
+    with open(sys.argv[1], 'r') as f:
+        list = f.readlines()
+        list = ast.literal_eval(list[0])
+else:
+    print("You did not add enough arguments")
 
 knapsack = 50
-
-"""Cant figure out the read file in portion of this project this is my attempt.
-I can figure out how to convert the strings to integers, and get it in the format needed to run program.
-ie see test cases.
-I have to comment out this stuff below of it give me type errors and will not run the intended code"""
-
-# with open("myItems.txt") as f:
-#     items = f.read()
-#     print(items)
-#
-# splitItemsList = items.strip('][)(').split('), (')
-# print(splitItemsList, "split items list")
-# print(splitItemsList[0], "item at index 0")
-# print(splitItemsList[1], "item at index 1")
-#
-# for i in range(len(splitItemsList)):
-#     iList = []
-#     num = splitItemsList[i].split(', ')
-#     num = int(num)
-#     iList.append(num)
-#
-# print(iList)
-
-
-"""I just added what was in the myItems.txt file as a list to prove that it works here.
-I am sure this is not what you were looking for but at least it proves my implementation works.
-It just runs in terminal and always will spit out 240"""
-
-itemsList = [(60, 10), (40, 40), (100, 20), (120, 30)]
+itemsList = list
 maxValue = fillKnapsackByValue(itemsList, knapsack)
 print("The max value of your bag is: ", maxValue)
 
