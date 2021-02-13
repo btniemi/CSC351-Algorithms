@@ -61,36 +61,8 @@ def match(menPrefrence, womanPrefrence):
     return ans
 
 
-
-with open(sys.argv[1], 'r') as f1:
-    m_pref = f1.readlines()
-    m_pref = ast.literal_eval(m_pref[0])
-with open(sys.argv[2], 'r') as f2:
-    w_pref = f2.readlines()
-    w_pref = ast.literal_eval(w_pref[0])
-
-men = m_pref
-women = w_pref
-match(men, women)
-
-
-"""lost on how to write this to a file now as well understand the read but not the write"""
-with open('tmaMatches.txt', 'w') as matchedFile:
+def check(matches):
     pass
-
-
-def check(match):
-    ans = 0
-    #for every tuple in list
-    for item in match:
-    #check if [0][0] == [0][1] and all others -> if first clears never have to recheck because its good
-        if item[1] == match[0][1]:
-            # if yes match == true
-            ans = ans + 1
-        else:
-            # else no match == false
-            ans = ans
-    return print(ans)
 
 
 
@@ -102,10 +74,26 @@ marriages = [(1,5),(2,2),(3,4),(4,3),(5,1)] #(boys,girls) girls saying no and me
 matched = [(1, 5), (2, 4), (3, 3), (4, 2), (5, 1)]
 matched2 = [(1, 5), (2, 4), (3, 3), (4, 3), (5, 1)]
 
+matchedPairs = match(m_preference,w_preference)
 check(matched)
 check(matched2)
 
-def test_match():
-    assert match(m_preference, w_preference) == marriages , "should pass"
-def test_check():
+# with open(sys.argv[1], 'r') as f1:
+#     m_pref = f1.readlines()
+#     m_pref = ast.literal_eval(m_pref[0])
+# with open(sys.argv[2], 'r') as f2:
+#     w_pref = f2.readlines()
+#     w_pref = ast.literal_eval(w_pref[0])
+#
+# men = m_pref
+# women = w_pref
+# match(men, women)
+
+with open('tmaMatches.txt', 'w') as matchedFile:
+    stringMatched = matchedFile.writelines(str(matchedPairs))
+
+
+def test_tma():
+    assert match(m_preference, w_preference) == marriages, "should pass"
+def test_tma():
     pass
