@@ -62,7 +62,12 @@ def match(menPrefrence, womanPrefrence):
 
 
 def check(matches):
-    pass
+    i = 0
+    j = matches[i][1]
+    for items in matches:
+        if items[i+1] != j:
+            return True
+    return False
 
 
 
