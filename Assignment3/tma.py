@@ -79,6 +79,7 @@ if sys.argv[1] == "match":
 
 elif sys.argv[1] == "check":
     """CHECK FUNCTION BELOW"""
+    # with the help of Joseph Vanden Bos (tutor) I was able to work on a solution he helped me with this function
     def check(matches):
         count = len(matches)
         checkList = [False for i in range(count)]
