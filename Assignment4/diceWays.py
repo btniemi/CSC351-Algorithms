@@ -1,13 +1,9 @@
 import pytest
 from itertools import product
 
-"""need to add the cmd line functionality with sys.argv stuff and the main etc see about this in class friday
-will probably have to reformat a bunch of stuff to dumb it down but this works really well as implementation
-don't even need to check side cases etc with list compression included"""
-
-num_dice = int(input("How many dice do you have? "))
-num_faces = int(input("How many faces do those dice have? "))
-wanted_sum = int(input("What number are you trying to roll for? "))
+"""used code from https://www.geeksforgeeks.org/python-k-dice-combinations/ to get insight on list compression
+and how to use the product() function from itertools, can use fstring or string format to pretty print answers
+did not figure this out but will work on later"""
 
 
 def num_ways(num_dice, num_faces, wanted_sum):
@@ -23,12 +19,22 @@ def num_ways(num_dice, num_faces, wanted_sum):
     num_ways_res = len(num_ways_list)
     # create a cool print statement that shows the list and the number of ways to return
     # want to do this to prove it works
-    return print("There are", num_ways_res, "ways to roll", wanted_sum, "from", num_dice, "dice with", num_faces,
-                 "faces and they are:\n", num_ways_list)
+    if wanted_sum < num_dice or wanted_sum > num_dice * num_faces:
+        return 0
+    else:
+        return num_ways_res
 
 
-num_ways(num_dice, num_faces, wanted_sum)
+def main():
+    num_dice = int(input("How many dice do you have? "))
+    num_faces = int(input("How many faces do those dice have? "))
+    wanted_sum = int(input("What number are you trying to roll for? "))
+    print(num_ways(num_dice, num_faces, wanted_sum))
 
-"""this test probably wont work because I am returning a print statement from the function ask about in class"""
+
+if __name__ == "__main__":
+    main()
+
+"""tests still not working but the algo is completed not sure how to fix"""
 def test_diceWays():
-    assert num_ways(3, 6, 8) == 21
+    assert num_ways(3, 6, 8) == 21, "should pass"
