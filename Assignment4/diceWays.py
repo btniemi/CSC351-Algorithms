@@ -38,3 +38,7 @@ if __name__ == "__main__":
 """tests still not working but the algo is completed not sure how to fix"""
 def test_diceWays():
     assert num_ways(3, 6, 8) == 21, "should pass"
+def test_diceWays():
+    assert num_ways(3, 6, 1) == 0, "should pass"
+def test_diceWays():
+    assert num_ways(1, 6, 4) == 1, "should pass"
