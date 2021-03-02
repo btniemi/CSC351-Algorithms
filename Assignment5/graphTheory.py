@@ -1,14 +1,30 @@
+"""with the help of https://www.geeksforgeeks.org/m-coloring-problem-backtracking-5/
+Jerry Malcomson for explainging some loop structures and providing me what he wrote to walk through it in code
+and Andy Niemantsverdriet for a nudge in the right direction for checking if valid colors"""
+
+def legalColor(graph, color):
+    for i in range(len(graph)):
+        for j in range(i + 1, len(graph)):
+            grp = graph[i][j]
+            chk = color[j]
+            val = color[i]
+            if grp and chk == val:
+                color[j] = val + 1
+                return color
+    return color
+
+
 def colorGraph(graph):
-    result = []
+    colorResult = []
     for i in range(len(graph)):
         for j in range(len(graph[i])):
             idx = graph[i].index(0)
-            result.append(idx)
+            colorResult.append(idx)
             break
 
-    """i need to add a check here but not sure"""
+    color = legalColor(graph, colorResult)
 
-    return result
+    return color
 
 
 def main():
@@ -25,17 +41,26 @@ def main():
               [0, 1, 1, 0, 1],
               [0, 0, 0, 1, 0]]
     """result should equal [0,1,2,0,1]"""
-    # graph2 returns [0,1,2,0,0]
+    # graph2 returns [0,1,2,0,1]
 
     graph3 = [[0, 1, 1],
               [1, 0, 1],
               [1, 1, 0]]
-    """result should be [0,0,1] how is this possible"""
-    #graph3 return [0,1,2]
+    """result should equal [0,1,2]"""
+    # graph3 return [0,1,2]
+
+    graph4 = [[0, 1, 0, 0, 0],
+              [1, 0, 1, 0, 0],
+              [0, 1, 0, 1, 0],
+              [0, 0, 1, 0, 1],
+              [0, 0, 0, 1, 0]]
+    """result should equal [0,1,0,1,0]"""
+    # graph4 return [0,1,0,1,0]
 
     print(colorGraph(graph))
     print(colorGraph(graph2))
     print(colorGraph(graph3))
+    print(colorGraph(graph4))
 
 
 if __name__ == "__main__":
