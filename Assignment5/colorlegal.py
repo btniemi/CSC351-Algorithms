@@ -28,6 +28,10 @@ def legalColor(graph, color):
                 return color
     return color
 
+def Solution(color):
+    for i in range(len(color)):
+        color[i] += 1
+    return color
 
-print(legalColor(graph2, color2))
+print(Solution(color3))
 
