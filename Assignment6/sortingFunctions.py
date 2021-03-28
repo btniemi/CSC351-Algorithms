@@ -1,10 +1,10 @@
 """used code from https://realpython.com/sorting-algorithms-python/#the-bubble-sort-algorithm-in-python
-as a guide to the algorithms basically a copy"""
+as a guide to the algorithms basically a copy of those and how they work"""
 
 from random import randint
 from timeit import repeat
 
-ARRAY_LENGTH = 10000
+ARRAY_LENGTH = 10
 
 def bubble_sort(array):
     n = len(array)
