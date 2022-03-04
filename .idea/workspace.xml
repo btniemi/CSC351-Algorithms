@@ -36,7 +36,7 @@
       <recent name="C:\Users\braedon.niemi\Documents\GitHub\CSC351-Algorithms" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for anagram.test_anagram">
+  <component name="RunManager" selected="Python tests.pytest for knapsack.test_knapsack">
     <configuration name="practiceTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CSC351-Algorithms" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -74,6 +74,22 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest for knapsack.test_knapsack" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="CSC351-Algorithms" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Assignment2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;knapsack.test_knapsack&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="pytest for mainClassDiscussions.test_func" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="CSC351-Algorithms" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -104,22 +120,6 @@
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for tma.test_tma" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="CSC351-Algorithms" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Assignment3" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tma.test_tma&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="pytest in bin (1)" type="tests" factoryName="py.test" nameIsGenerated="true">
@@ -156,20 +156,20 @@
     </configuration>
     <list>
       <item itemvalue="Python.practiceTest" />
-      <item itemvalue="Python tests.pytest in bin (1)" />
       <item itemvalue="Python tests.pytest for practiceTest.test_practiceTest" />
+      <item itemvalue="Python tests.pytest in bin (1)" />
       <item itemvalue="Python tests.pytest for anagram.test_anagram" />
-      <item itemvalue="Python tests.pytest for tma.test_tma" />
       <item itemvalue="Python tests.pytest for mainClassDiscussions.test_func" />
       <item itemvalue="Python tests.pytest in mainClassDiscussions.py" />
+      <item itemvalue="Python tests.pytest for knapsack.test_knapsack" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for knapsack.test_knapsack" />
         <item itemvalue="Python tests.pytest for anagram.test_anagram" />
         <item itemvalue="Python.practiceTest" />
         <item itemvalue="Python tests.pytest in mainClassDiscussions.py" />
         <item itemvalue="Python tests.pytest for mainClassDiscussions.test_func" />
-        <item itemvalue="Python tests.pytest for tma.test_tma" />
       </list>
     </recent_temporary>
   </component>
@@ -197,22 +197,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="550" y="114" key="EnvironmentVariablesDialog/0.0.1366.728@0.0.1366.728" timestamp="1646415312674" />
-    <state width="1345" height="252" key="GridCell.Tab.0.bottom" timestamp="1646416205801">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1646417581179">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="252" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1646416205801" />
-    <state width="1345" height="252" key="GridCell.Tab.0.center" timestamp="1646416205801">
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1646417581179" />
+    <state width="1345" height="252" key="GridCell.Tab.0.bottom" timestamp="1646417994028">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="252" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1646416205801" />
-    <state width="1345" height="252" key="GridCell.Tab.0.left" timestamp="1646416205801">
+    <state width="1345" height="252" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1646417994028" />
+    <state width="1345" height="252" key="GridCell.Tab.0.center" timestamp="1646417994028">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="252" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1646416205801" />
-    <state width="1345" height="252" key="GridCell.Tab.0.right" timestamp="1646416205801">
+    <state width="1345" height="252" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1646417994028" />
+    <state width="1345" height="252" key="GridCell.Tab.0.left" timestamp="1646417994028">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="252" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1646416205801" />
+    <state width="1345" height="252" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1646417994028" />
+    <state width="1345" height="252" key="GridCell.Tab.0.right" timestamp="1646417994028">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="252" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1646417994028" />
     <state width="1345" height="223" key="GridCell.Tab.1.bottom" timestamp="1646415379065">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
