@@ -28,16 +28,16 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CSC-352-Fall2021" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\braedon.niemi\Documents\GitHub\CSC351-Algorithms" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.KKNMachineLearning">
-    <configuration name="KKNMachineLearning" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.pytest for anagram.test_anagram">
+    <configuration name="practiceTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CSC351-Algorithms" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -45,11 +45,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Assignment7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Assignment7/KKNMachineLearning.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practiceTest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -58,97 +58,118 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="MinimunSpanningTree" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for anagram.test_anagram" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="CSC351-Algorithms" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Assignment1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;anagram.test_anagram&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for mainClassDiscussions.test_func" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="CSC351-Algorithms" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/InClassExamples" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\braedon.niemi\Documents\GitHub\CSC351-Algorithms\MinimunSpanningTree.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;mainClassDiscussions.test_func&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="colorlegal" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for practiceTest.test_practiceTest" type="tests" factoryName="py.test">
       <module name="CSC351-Algorithms" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Assignment5" />
+      <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Assignment5/colorlegal.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="graphTheory" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for tma.test_tma" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="CSC351-Algorithms" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Assignment5" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Assignment3" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Assignment5/graphTheory.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tma.test_tma&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="sortingFunctions" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest in bin (1)" type="tests" factoryName="py.test" nameIsGenerated="true">
       <module name="CSC351-Algorithms" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
+      <option name="SDK_HOME" value="C:\Users\braedon.niemi\AppData\Local\Programs\Python\Python38-32\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in mainClassDiscussions.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="CSC351-Algorithms" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Assignment6" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/InClassExamples" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Assignment6/sortingFunctions.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/InClassExamples/mainClassDiscussions.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.practiceTest" />
+      <item itemvalue="Python tests.pytest in bin (1)" />
+      <item itemvalue="Python tests.pytest for practiceTest.test_practiceTest" />
+      <item itemvalue="Python tests.pytest for anagram.test_anagram" />
+      <item itemvalue="Python tests.pytest for tma.test_tma" />
+      <item itemvalue="Python tests.pytest for mainClassDiscussions.test_func" />
+      <item itemvalue="Python tests.pytest in mainClassDiscussions.py" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.KKNMachineLearning" />
-        <item itemvalue="Python.MinimunSpanningTree" />
-        <item itemvalue="Python.sortingFunctions" />
-        <item itemvalue="Python.graphTheory" />
-        <item itemvalue="Python.colorlegal" />
+        <item itemvalue="Python tests.pytest for anagram.test_anagram" />
+        <item itemvalue="Python.practiceTest" />
+        <item itemvalue="Python tests.pytest in mainClassDiscussions.py" />
+        <item itemvalue="Python tests.pytest for mainClassDiscussions.test_func" />
+        <item itemvalue="Python tests.pytest for tma.test_tma" />
       </list>
     </recent_temporary>
   </component>
@@ -164,10 +185,54 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1629828970381">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="156" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1646416039114">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/1920.0.1366.728/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1629828970381" />
+    <state x="156" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1646416039114" />
+    <state x="412" y="154" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1646415803550">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="412" y="154" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1646415803550" />
+    <state x="550" y="114" key="EnvironmentVariablesDialog" timestamp="1646415312674">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="550" y="114" key="EnvironmentVariablesDialog/0.0.1366.728@0.0.1366.728" timestamp="1646415312674" />
+    <state width="1345" height="252" key="GridCell.Tab.0.bottom" timestamp="1646416205801">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="252" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1646416205801" />
+    <state width="1345" height="252" key="GridCell.Tab.0.center" timestamp="1646416205801">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="252" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1646416205801" />
+    <state width="1345" height="252" key="GridCell.Tab.0.left" timestamp="1646416205801">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="252" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1646416205801" />
+    <state width="1345" height="252" key="GridCell.Tab.0.right" timestamp="1646416205801">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="252" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1646416205801" />
+    <state width="1345" height="223" key="GridCell.Tab.1.bottom" timestamp="1646415379065">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1646415379065" />
+    <state width="1345" height="223" key="GridCell.Tab.1.center" timestamp="1646415379065">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1646415379065" />
+    <state width="1345" height="223" key="GridCell.Tab.1.left" timestamp="1646415379065">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1646415379065" />
+    <state width="1345" height="223" key="GridCell.Tab.1.right" timestamp="1646415379065">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1646415379065" />
+    <state x="184" y="9" key="SettingsEditor" timestamp="1646415025791">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1646415025791" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
